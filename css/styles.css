@@ -144,6 +144,18 @@ img {
   color: var(--hover-color);
 }
 
+.menu-text::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  width: 100%;
+  background-color: var(--hover-color);
+  border-radius: 2px;
+}
+
 .menu-text:hover::after,
 .menu-text:focus::after {
   color: var(--hover-color);
