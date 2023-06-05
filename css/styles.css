@@ -144,10 +144,12 @@ img {
   color: var(--hover-color);
 }
 
-.menu-text::after {
+.menu-text:hover::after,
+.menu-text:focus::after {
+  color: var(--hover-color);
   content: '';
   position: absolute;
-  display: block;
+  display: inline-block;
   left: 0;
   bottom: -1px;
   height: 4px;
