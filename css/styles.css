@@ -136,6 +136,17 @@ img {
   font-size: 16px;
   line-height: 1.5;
   transition: color var(--transition-time);
+  position: relative;
+}
+
+.menu-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--hover-color);
+  border-radius: 2px;
 }
 
 .menu-text:hover,
