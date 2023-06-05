@@ -131,7 +131,7 @@ img {
 .menu-text {
   padding-top: 24px;
   padding-bottom: 24px;
-  color: var(--hover-color);
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -144,7 +144,11 @@ img {
   color: var(--hover-color);
 }
 
-.menu-text::after {
+.current {
+  color: var(--hover-color);
+}
+
+.current::after {
   content: '';
   position: absolute;
   display: block;
@@ -156,19 +160,12 @@ img {
   border-radius: 2px;
 }
 
-.menu-text:hover::after,
+/* .menu-text:hover::after,
 .menu-text:focus::after {
   color: var(--hover-color);
-  content: '';
-  position: absolute;
-  display: inline-block;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  width: 100%;
   background-color: var(--hover-color);
   border-radius: 2px;
-}
+} */
 
 .address-list {
   display: flex;
